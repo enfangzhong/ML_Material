@@ -1,0 +1,25 @@
+SVM PPt及code存放在百度网盘里
+链接: https://pan.baidu.com/s/1CbZ14h_ZpPMXuhyFZa15Sw 密码: sv5x
+
+数据目录cnews_data解释：
+
+- A. char-level: 原始数据
+- B. word-level: 对原始数据进行分词得到的数据
+- C. char-level-feature: 原始数据以字为特征生成的特征文件
+- D. word-level-feature: 分词后的数据以词为特征生成的特征文件
+
+code目录解释：
+
+- generate_vocab.ipynb： 在原始数据上生成词表
+- generate_word_level_data.ipynb： 数据A生成数据B
+- char_level_feature.ipynb: 数据A生成数据C
+- word_level_feature.ipynb: 数据A生成数据D
+
+libsvm-3.22:
+
+使用命令行调用svm进行训练。
+- run_char_level.sh: 在char-level-feature数据上进行训练
+- run_word_level.sh: 在word-level_feature数据上进行训练
+
+作业：
+使用libsvm的python包，写code实现模型训练与预测。数据集使用数据集C和数据集D
